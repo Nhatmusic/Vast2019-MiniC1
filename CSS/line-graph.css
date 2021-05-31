@@ -1,0 +1,99 @@
+
+
+.main text {
+    font: 10px sans-serif;
+}
+
+.axis line, .axis path {
+    shape-rendering: crispEdges;
+    stroke: black;
+    fill: none;
+}
+.node {
+    stroke: #fff;
+    stroke-width: 1.5px;
+}
+
+.axis {
+    opacity: 0.5;
+    font: 10px sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+.link {
+    fill: #dddddd;
+    stroke-width: 1px;
+}
+
+.axis .domain {
+    fill: none;
+    stroke: #000;
+    stroke-opacity: .3;
+    stroke-width: 4px;
+    stroke-linecap: round;
+}
+
+.axis .halo {
+    fill: none;
+    stroke: #ddd;
+    stroke-width: 3px;
+    stroke-linecap: round;
+}
+
+.slider .handle {
+    fill: #fff;
+    stroke: #000;
+    stroke-opacity: .5;
+    stroke-width: 1.25px;
+    cursor: grab;
+}
+
+#box-plot{
+    position:relative;
+    float: left;
+    top: 50px;
+    left: 1900px;
+    visibility: hidden;
+    width: 1500px;
+}
+.floatingBox {
+    position: absolute;
+    padding: 5px;
+    box-sizing: content-box;
+    /*box-shadow: 3px 3px 3px #44444452;*/
+    /*background-image: -webkit-linear-gradient(left, #fefefe, #eeeeee);*/
+    background-image: -webkit-linear-gradient(left, #f6f6f6, #f1f1f1);
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px ;
+    transform-origin: 100% 100% 0;
+    -webkit-transform-origin: 100% 100% 0;
+    -ms-transform-origin: 100% 100% 0;
+    z-index: 100;
+}
+.floatingBoxHeader{
+    height: 20px;
+    width: 100%;
+    cursor: move;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 1);
+    /*padding: 10px;*/
+    z-index: 10;
+    background-color: #2196F3;
+    color: #fff;
+}
+.floatingBoxHeader:active{
+    height: 20px;
+    width: 100%;
+    cursor: grabbing;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 1);
+}
+.floatingBoxContent{
+    cursor: pointer;
+}
+
+#controlPanel{
+    box-sizing: content-box;
+    padding: 20px;
+}

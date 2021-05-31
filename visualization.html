@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Challenge 1 Visualization</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="CSS/line-graph.css">
+    <script src="./lib/jquery-3.4.0.min.js"></script>
+    <script src="./lib/d3.v4.min.js"></script>
+    <!--<script src="https://d3js.org/d3-array.v1.min.js"></script>-->
+    <script src="./lib/d3-geo.v1.min.js"></script>
+    <script src="./lib/colorbrewer.v1.min.js"></script>
+    <script src="./lib/math.min.js"></script>
+    <script src="./lib/underscore.js"></script>
+    <script src="./lib/notify.js"></script>
+    <!--<script src="./js/lodash.js"></script>-->
+
+</head>
+<body>
+
+    <div id="row">
+        <div class="geospatial0">
+            <h2>Shake Intensity</h2>
+        </div>
+        <div class="geospatial1">
+            <h2>Medical</h2>
+        </div>
+        <div class="geospatial2">
+            <h2>Buildings</h2>
+        </div>
+        <div class="geospatial3">
+            <h2>Power</h2>
+        </div>
+        <div class="geospatial4">
+            <h2>Roads and bridges</h2>
+        </div>
+        <div class="geospatial5">
+            <h2>Sewer&Water</h2>
+        </div>
+
+    </div>
+
+    <div id="report_line">
+        <h4>Number of Report</h4>
+    </div>
+
+    <div id="heatmap">
+            <button id="button1" onclick="showdatabyfeature()">By Damage Type</button>
+            <button id="button2" onclick="showdatabylocation()">By Location</button>
+            <button id="button3" onclick="updatebyhour()">By Hour</button>
+            <button id="button4" onclick="updatebyminute()">By Minute</button>
+            <button id="button5" onclick="showLineGraph()">Show Line Graph of Uncertainty</button>
+            <h3>Heatmap by Location</h3>
+    </div>
+
+    <div id="box-plot">
+    </div>
+    <div id="loader"></div>
+
+
+
+
+    <div id="controller"></div>
+    <script src="./js/geospatial.js" ></script>
+    <script src="./js/lineChart.js"></script>
+    <script src="./js/main.js"></script>
+
+
+</body>
+</html>
